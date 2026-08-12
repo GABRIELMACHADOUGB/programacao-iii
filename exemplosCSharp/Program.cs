@@ -1,5 +1,17 @@
-﻿int  num1 = 20;
-int  num2 = 22;
-int  soma = num1  + num2;
-Console.WriteLine($"A soma de {num1} + {num2} é igual a {soma}");
-Console.WriteLine("tESTE GIT");
+﻿using exemplosCSharp;
+
+Console.WriteLine("Informe sua idade:");
+int idade = int.Parse(Console.ReadLine());
+Console.WriteLine($"idade: {idade}");
+
+Console.WriteLine("Informe seu nome:");
+string nome = Console.ReadLine();
+Console.WriteLine($"O nome é: {nome}");
+
+Calculadora calc;
+calc = new Calculadora();
+int resultado = calc.Somar(5, 3);
+Console.WriteLine(resultado);
+
+resultado = Calculadora.Subtrair(10, 4);
+Console.WriteLine(resultado);
